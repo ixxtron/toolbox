@@ -1,3 +1,30 @@
+## Creating an AWS EC2 Instance with Terraform (using an HCL file)
+```
+/ //
+/ The provider block tells terraform what platform to build our platform on. 
+/ Requiring authentication for the aws account with access & secret key arguments.
+/ // /// //// 
+provider "aws" {
+  access_key  = "ACCESS_KEY"
+  secret_key  = "SECRET_KEY"
+  region      = "us-east-1"
+}
+
+
+/ //
+/ The resource block defines the infrustracture component we're creating.  
+/ Each resource type has speficic parameterrequirements.  
+/ For example here the resource type of an *aws instance* requires the 
+/ parameters: `ami` and `instance_type` there are other parameters we can include but they are optional.
+/ // /// ////
+resource "aws_instance" "example" {
+  ami           = "ami-12345a678"
+  instance_type = "t2.micro"
+}
+```
+
+* **HCL** - Harshicorp Configuration Language (delcarative file)
+---
 ### Infrastructure as Code
 If you are new to infrastructure as code as a concept, it is the process of managing infrastructure in a file or files rather than manually configuring resources in a user interface. A resource in this instance is any piece of infrastructure in a given environment, such as a virtual machine, security group, network interface, etc.
 
