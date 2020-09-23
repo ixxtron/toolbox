@@ -20,7 +20,7 @@ resource "aws_instance" "example" {
 
 ### 2. Initializing the working directory for terraform
 `terraform init`
-"The terraform init command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. It is safe to run this command multiple times."
+- "The terraform init command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. It is safe to run this command multiple times."
 
 ### 3. Provisioning the Amazon EC2
 `terraform apply`
@@ -29,3 +29,4 @@ resource "aws_instance" "example" {
 ## Destroy resources
 ### 1. Terminating all resources with terraform
 `terraform destory`
+- You're done!
