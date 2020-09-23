@@ -27,5 +27,5 @@ resource "aws_instance" "example" {
 - Verify that your instance did indeed get provisioned by checking the AWS Management Console
 
 ## Destroy resources
-## 1. Terminating all resources with terraform
+### 1. Terminating all resources with terraform
 `terraform destory`
