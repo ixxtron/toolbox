@@ -17,6 +17,12 @@ provider "aws" {
 / For example here the resource type of an *aws instance* requires the 
 / parameters: `ami` and `instance_type` there are other parameters we can include but they are optional.
 / // /// ////
+/ resource "<provider>_<resource_type>" "name" {
+/   config options....
+/   key = "value
+/   key2 = "another value"
+/ }
+
 resource "aws_instance" "example" {
   ami           = "ami-12345a678"
   instance_type = "t2.micro"
