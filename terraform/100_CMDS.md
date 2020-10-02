@@ -12,3 +12,24 @@ $ terraform show			# show current state
 
 $ cat terraform.tfstate			# show state in JSON format
 ```
+
+```
+* terraform console *
+var.myvar
+"${var.myvar}"
+---
+> var.myvar
+hello terraform
+
+> var.mymap
+{
+  "mykey" = "my value"
+}
+
+> var.mymap["mykey"]
+my value
+
+> "${var.mymap["mykey"]}"
+my value
+```
+
