@@ -1,4 +1,4 @@
-# TERRAFROM: Useful Commands
+# TERRAFORM: Useful Commands
 ```
 $ terraform plan                                  # plan
 
