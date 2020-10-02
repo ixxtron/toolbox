@@ -15,12 +15,13 @@ $ cat terraform.tfstate			# show state in JSON format
 
 ```
 * terraform console *
-var.myvar
-"${var.myvar}"
+> var.myvar
+> "${var.myvar}"
 ---
 > var.myvar
 hello terraform
 
+### ### MAP #####
 > var.mymap
 {
   "mykey" = "my value"
@@ -31,5 +32,26 @@ my value
 
 > "${var.mymap["mykey"]}"
 my value
+
+### ### LISt #####
+> var.mylist
+[
+  1,
+  2,
+  3,
+]
+> var.mylist[1]
+2
+
+### FUNCTIONS 
+> element(var.mylist, 1)
+2
+> slice(var.mylist, 0, 2)
+[
+  1,
+  2,
+]
+
+
 ```
 
