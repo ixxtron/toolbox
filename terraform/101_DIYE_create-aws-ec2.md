@@ -1,5 +1,12 @@
 # Step-by-step examples...
 
+## Configuration
+The set of files used to describe infrastructure in Terraform is simply known as a Terraform configuration. We're going to write our first configuration now to launch a single VM instance.
+
+The format of the configuration files is documented here. We recommend using JSON for creating configuration files.
+
+Create a configuration an instance.tf file with your favourite editor like vim, nano etc.:
+
 ## Create an AWS EC2 with Terraform
 
 ### 1. Declaring your terraform `(.tf)` file
